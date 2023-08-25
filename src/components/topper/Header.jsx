@@ -1,4 +1,4 @@
-import { NavBar } from './NavBar'
+import { BurgerMenu } from './BurgerMenu'
 import logo from '../../assets/img/logo-UNAN.png'
 
 export const Header = () => {
@@ -19,7 +19,7 @@ export const Header = () => {
             <span className='text-[#605656] text-lg font-[400] '>REPOSITORIO</span>
           </p>
         </div>
-        <NavBar /> 
+        <BurgerMenu /> 
       </header>
     </>
   )
