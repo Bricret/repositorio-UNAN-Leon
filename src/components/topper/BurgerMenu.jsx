@@ -12,7 +12,7 @@ export const BurgerMenu = () => {
                 <a href="#" className='w-[100%] px-3 py-1 hover:text-orange-400'>Contáctanos</a>
             </li>
         </ul>
-        <div className='mr-9  mt-[63px]  sm:hidden cursor-pointer ' >   
+        <div className='mr-6  mt-[24px]  sm:hidden cursor-pointer' >   
             <span className='block w-3/4 h-[6px] m-1 bg-black  rounded' ></span>
             <span className='block w-3/4 h-[6px] m-1 bg-black mt-1 rounded' ></span>
             <span className='block w-3/4 h-[6px] m-1 bg-black mt-1 mb-2 rounded ' ></span>
