@@ -16,14 +16,14 @@ export const Hero = () => {
             <div className="col-start-1 row-start-1 mx-auto my-auto">
                 <p className=" text-white font-poppins sm:text-6xl text-3xl font-bold mb-16" >¿Qué estas buscando?</p>
 
-                <form action="#" className=" sm:flex   font-poppins font-semibold" >
+                <form action="#" className="flex flex-col md:flex-row justify-start items-center gap-4 font-poppins font-semibold px-8" >
                     <input 
                         type= "text"
-                        className= " sm:w-full sm:h-[50px] w-10/12 h-6  mx-3 my-3 rounded-md sm:text-lg text-[10px] border-2 sm:border-rose-500 px-4"
+                        className= " sm:w-full w-full md:w-10/12 h-8 md:h-14 rounded-md sm:text-lg text-xs border-2 border-rose-500 px-4"
                         placeholder= "Escribe el nombre de examenes de grado o tesis"
                         //onSubmit={}
                     />
-                    <button href='#' className=" bg-[#AB030C] sm:ml-3 sm:mt-3 sm:pl-8 sm:pr-8 px-2 py-1 ml-3 rounded-md text-slate-50 sm:text-[20px] text-[10px]">Buscar</button>
+                    <button href='#' className=" bg-[#AB030C]  rounded-md text-slate-50 text-xs md:text-base w-32 md:w-2/12 h-8 md:h-14">Buscar</button>
                 </form>
 
                 <p className="font-poppins mt-12 text-[#BBB] sm:text-[17px] text-[10px]">Aquí encontraras todas las Tesis y exámenes de grado realizados por los estudiantes egresados de la UNAN-LEON </p>
