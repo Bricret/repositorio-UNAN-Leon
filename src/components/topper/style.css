@@ -1,0 +1,21 @@
+#bars__menu {
+    transition: all 600ms;
+}
+
+#bars__menu span {
+    transition: all 400ms;
+    transform-origin: 0px 100%;
+}
+
+ #activeline1__bars-menu {
+    transform: rotate(45deg) translate(-1px, -0.1px);
+}
+
+ #activeline2__bars-menu {
+    opacity: 0;
+    margin-left: -30px;
+}
+
+ #activeline3__bars-menu {
+    transform: rotate(-45deg) translate(3px, 1px);
+}
