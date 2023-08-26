@@ -3,13 +3,13 @@ export const BurgerMenu = () => {
     <>
         <ul className="hidden sm:flex sm:w-[438px] sm:mr-4 sm:place-content-around sm:items-center sm:font-[400] sm:text-[#605656]">
             <li className=''>
-                <a href="#" className='w-[100%] px-3 py-1  hover:text-orange-400'>Pagina Principal</a>
+                <a href="#" className='w-[100%] px-3 py-1  hover:text-[#202c75]'>Pagina Principal</a>
             </li>
             <li>
-            <a href="#" className='w-[100%] px-3 py-1 hover:text-orange-400'>Aulas virtuales</a>    
+            <a href="#" className='w-[100%] px-3 py-1 hover:text-[#202c75]'>Aulas virtuales</a>    
             </li>
             <li>
-                <a href="#" className='w-[100%] px-3 py-1 hover:text-orange-400'>Contáctanos</a>
+                <a href="#" className='w-[100%] px-3 py-1 hover:text-[#202c75]'>Contáctanos</a>
             </li>
         </ul>
         

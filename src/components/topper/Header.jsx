@@ -13,10 +13,10 @@ export const Header = () => {
       <header className='flex place-content-between'>
         <div className='flex items-center'>
           <img src={logo} alt="Logo-Unanleon" className='w-20 h-24 pt-2 sm:m-4 sm:w-32 sm:h-36' />
-          <p className='font-roboto pl-2'>
-            <span className='text-[#202C75] text-lg sm:text-3xl font-[700] '>UNAN </span> <span className='text-[#000] text-lg sm:text-3xl font-[700] '> - </span>
-            <span className='text-[#910618] text-lg sm:text-3xl font-[700] '>LEON </span> <span className='text-[#605656] text-xl sm:text-4xl font-[800] '> | </span>
-            <span className='text-[#605656] text-xs sm:text-xl font-[400] '>REPOSITORIO</span>
+          <p className='font-roboto pl-2 bg-clip-text text-transparent py-2' style={{"background": "linear-gradient(90deg,rgba(29,39,98,1) 0%,rgba(171,3,12,1) 29%,rgba(142,116,36,1) 58%,rgba(173,181,187,1) 95%)", "background-clip": "text", '-webkit-background-clip': "text"}}>
+            <span className=' text-lg sm:text-3xl font-[700] '>UNAN </span> <span className='text-[#000] text-lg sm:text-3xl font-[700] '> - </span>
+            <span className=' text-lg sm:text-3xl font-[700] '>LEON </span> <span className='text-[#605656] text-xl sm:text-4xl font-[800] '> | </span>
+            <span className=' text-xs sm:text-xl font-[400] '>REPOSITORIO</span>
           </p>
         </div>
         <BurgerMenu /> 
