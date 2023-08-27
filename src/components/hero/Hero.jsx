@@ -1,13 +1,7 @@
 import heroe from '../../assets/img/hero.jpg'
-import { UseForm } from "../../utils/hooks/useForm";
 
 export const Hero = () => {
     
-
-
-    const { Search, setSearch } = UseForm({
-        search: '',
-    });
 
   return (
     <>
