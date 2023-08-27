@@ -8,7 +8,7 @@ export const Cards = () => {
                 <p>Facultades</p>
             </div>
             
-            <div className=" flex items-start justify-start  flex-wrap gap-8 mx-16">
+            <div className=" flex items-start justify-start  flex-wrap gap-8 mx-16 mb-11">
                 <Card 
                 />
 
