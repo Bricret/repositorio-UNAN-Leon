@@ -13,7 +13,6 @@ export const ItemsNav = () => {
                 <a href="#" className='w-[100%] px-3 py-1 hover:text-[#202c75]'>Contáctanos</a>
             </li>
         </ul>
-        
         </>
     )
 }

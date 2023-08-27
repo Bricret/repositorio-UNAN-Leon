@@ -1,4 +1,5 @@
 import { Card } from "./Card"
+import info from "./datos"
 
 
 export const Cards = () => {
@@ -9,23 +10,13 @@ export const Cards = () => {
             </div>
             
             <div className=" flex items-start justify-start  flex-wrap gap-8 mx-16 mb-11">
-                <Card 
-                />
 
-                <Card
-                />
+            {
+                info.map((item, index) => (
+                    <Card key={index} title={item.title} description={item.description} image={item.image} />
+                ))
+            }
 
-                <Card
-                />
-
-                <Card
-                />
-
-                <Card
-                />
-
-                <Card
-                />
             </div>
         </>
     )
