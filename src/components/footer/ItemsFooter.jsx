@@ -2,7 +2,7 @@
 export const ItemsFooter = () => {
   return (
         <>
-            <div className=" flex flex-wrap ml-44 mt-10 pb-20  space-x-14 text-[#F5D64C] ">
+            <div className=" flex flex-wrap ml-44 mt-10 pb-20  space-x-14 text-third-color ">
                 <section>
                     <h2  className=" pb-4 font-bold text-xl">Ubícanos</h2>
                     <ul className="text-white space-y-4">
@@ -38,7 +38,7 @@ export const ItemsFooter = () => {
                 
             </div>
 
-            <div className="bg-[#930A18] text-white p-2 text-center">
+            <div className="bg-primary-color text-white p-2 text-center">
                 <p className=" font-serif text-ls">Universidad Nacional Autónoma de Nicaragua, León.</p>
                 <p className=" font-roboto text-[12px]">Todos los derechos reservados ©2023  Brian Rico. </p>
             </div>

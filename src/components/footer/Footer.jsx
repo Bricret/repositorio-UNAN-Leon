@@ -5,7 +5,7 @@ import { ItemsFooter } from './ItemsFooter'
 export const Footer = () => {
   return (
     <>
-        <div className=" bg-[#192D76]">
+        <div className=" bg-secondary-color">
             <div className='flex items-center'>
                 <img src={logo} alt="Logo-Unanleon" className=' pt-4 sm:m-4 sm:mt-5 sm:w-36 sm:h-40' />
                 <p className='font-roboto pl-2 bg-clip-text py-2 text-white'>

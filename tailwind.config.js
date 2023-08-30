@@ -18,7 +18,10 @@ export default {
         'top-left-1/3-3/4': '33% 75%',
       },
       colors: {
-        'regal-blue': '#243c5a',
+        'primary-color': '#AB030C',
+        'secondary-color': '#192D76',
+        'third-color': '#F5D64C',
+
       },
     },
   },

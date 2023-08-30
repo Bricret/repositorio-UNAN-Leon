@@ -17,7 +17,7 @@ export const Hero = () => {
                         placeholder= "Escribe el nombre de examenes de grado o tesis"
                         //onSubmit={}
                     />
-                    <button href='#' className=" bg-[#AB030C]  rounded-md text-slate-50 text-xs md:text-base w-32 md:w-2/12 h-8 md:h-14">Buscar</button>
+                    <button href='#' className=" bg-primary-color  rounded-md text-slate-50 text-xs md:text-base w-32 md:w-2/12 h-8 md:h-14">Buscar</button>
                 </form>
 
                 <p className="font-poppins mt-12 text-[#BBB] sm:text-[17px] text-[10px]">Aquí encontraras todas las Tesis y exámenes de grado realizados por los estudiantes egresados de la UNAN-LEON </p>
