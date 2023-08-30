@@ -16,7 +16,10 @@ export default {
       },
       transformOrigin: {
         'top-left-1/3-3/4': '33% 75%',
-      }
+      },
+      colors: {
+        'regal-blue': '#243c5a',
+      },
     },
   },
   plugins: [],
