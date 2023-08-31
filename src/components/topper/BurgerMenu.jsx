@@ -1,5 +1,6 @@
-import { useState } from 'react'
 import './style.css'
+import { useSelect } from '../../hooks/useSelect'
+
 
 export const BurgerMenu = () => {
     
@@ -15,24 +16,15 @@ export const BurgerMenu = () => {
         line3: 'activeline3__bars-menu',
      };
 
- const [elementId, setElementId] = useState(originalID);
- 
- const [stateNav, setStateNav] = useState(false);
-
- const animateBars = () => {
-    
-    stateNav ? setElementId(originalID) : setElementId(newID);
-    setStateNav(!stateNav);
-    
- };
+     const { onPick, first } = useSelect(true,originalID, newID);
 
   return (
     <>
         
-        <div id='bars__menu' onClick={ animateBars } className='mr-6  mt-[24px]  sm:hidden cursor-pointer' >   
-            <span id={elementId.line1} className='block w-3/4 h-[5px] m-1 bg-black  rounded' ></span>
-            <span id={elementId.line2} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded' ></span>
-            <span id={elementId.line3} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
+        <div id='bars__menu' onClick={ onPick } className='mr-6  mt-[24px]  sm:hidden cursor-pointer' >   
+            <span id={first.line1} className='block w-3/4 h-[5px] m-1 bg-black  rounded' ></span>
+            <span id={first.line2} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded' ></span>
+            <span id={first.line3} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
             <span className='font-[poppins] text-xs underline hover:underline-offset-4'>Menu</span>
         </div>
 

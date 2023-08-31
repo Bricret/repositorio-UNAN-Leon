@@ -11,7 +11,7 @@ export const Header = () => {
       </div>
       <header className='flex place-content-between'>
 
-        <LogoType />
+        <LogoType type={ true }/>
 
         <ItemsNav />
 
