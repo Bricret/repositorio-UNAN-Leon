@@ -1,41 +1,24 @@
+import seccion from "./seccion"
+
 
 export const ItemsFooter = () => {
   return (
         <>
-            <div className=" flex flex-wrap ml-44 mt-10 pb-20  space-x-14 text-third-color ">
-                <section>
-                    <h2  className=" pb-4 font-bold text-xl">Ubícanos</h2>
-                    <ul className="text-white space-y-4">
-                        <li><span className=" block">Edificio Central contiguo a</span>la iglesia la merced, león</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2 className=" pb-4 font-bold text-xl">Universidad</h2>
-                    <ul className="text-white space-y-4">
-                        <li>estatuas UNAN-Leon</li>
-                        <li>Reseña Histórica de la UNAN-León</li>
-                        <li>Pensamiento Estratégico</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2  className=" pb-4 font-bold text-xl">Recursos</h2>
-                    <ul className="text-white space-y-4">
-                        <li>Sistema de Bibliotecas - SIBUL</li>
-                        <li>Portal de Revistas:Científica y Literarias</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2  className=" pb-4 font-bold text-xl">Servicios</h2>
-                    <ul className="text-white space-y-4">
-                        <li>Red Wifi</li>
-                        <li>Guía Telefónica</li>
-                        <li>Correo Office 365</li>
-                    </ul>
-                </section>
-                
+            <div className="flex flex-wrap ml-24 mt-10 pb-32 pt-16  space-x-24 text-third-color">
+                {
+                    seccion.map(( value, index ) => (
+                        <>
+                        <section key={ index }>
+                            <h2 className=" pb-6 font-bold text-2xl cursor-default">{value.title}</h2>
+                            <ul className="text-white">
+                                <li className="mb-5 cursor-pointer" >{value.seccion1}</li>
+                                <li className="mb-5 cursor-pointer" >{value.seccion2}</li>
+                                <li className="mb-5 cursor-pointer" >{value.seccion3}</li>
+                            </ul>  
+                        </section> 
+                        </>
+                    ))
+                }
             </div>
 
             <div className="bg-primary-color text-white p-2 text-center">

@@ -1,7 +1,6 @@
 import { LogoType } from '../logo/LogoType'
 import { ItemsFooter } from './ItemsFooter'
 
-
 export const Footer = () => {
   return (
     <>
