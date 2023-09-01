@@ -5,7 +5,7 @@ import info from "./datos"
 export const Cards = () => {
   return (
         <>
-            <div className=" sm:px-16  sm:py-14 pt-11 pb-9 sm:text-4xl text-3xl font-extrabold font-poppins text-[#2E2D29CC]">
+            <div className=" px-16  sm:py-14 pt-11 pb-9 sm:text-4xl text-3xl font-extrabold font-poppins text-[#2E2D29CC]">
                 <p>Facultades</p>
             </div>
             
