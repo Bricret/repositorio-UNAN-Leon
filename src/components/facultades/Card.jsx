@@ -7,7 +7,7 @@ export const Card = (props) => {
 
   return (
         <>
-            <div className=" max-w-sm sm:h-[680px] bg-white rounded-lg shadow my-6 border-[1px] border-[#dbdbdb] flex flex-col justify-between">
+            <div className=" max-w-sm sm:h-[680px] bg-white rounded-lg shadow my-6 border-[1px] border-[#dbdbdb] flex flex-col justify-between cursor-default">
                 <div className="w-full flex flex-col justify-start">
                     <img className="rounded-t-lg w-full" src={ image } />
                     <span className='p-5 w-full '>
