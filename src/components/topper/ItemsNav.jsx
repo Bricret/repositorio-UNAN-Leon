@@ -14,7 +14,7 @@ export const ItemsNav = () => {
                         </li>
                     ))
                 }
-            <span className='px-8 font-poppins cursor-default'>Buscador</span>
+            <span className='sm:hidden px-8 font-poppins cursor-default'>Buscador</span>
             </ul>
             <div className='sm:hidden sm:py-0 py-4 text-black'>
                 <Search />
