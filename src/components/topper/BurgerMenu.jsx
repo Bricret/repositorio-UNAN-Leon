@@ -21,11 +21,11 @@ export const BurgerMenu = () => {
   return (
     <>
         
-        <div id='bars__menu' onClick={ onPick } className='mr-6  mt-[24px]  sm:hidden cursor-pointer' >   
-            <span id={first.line1} className='block w-3/4 h-[5px] m-1 bg-black  rounded' ></span>
-            <span id={first.line2} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded' ></span>
-            <span id={first.line3} className='block w-3/4 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
-            <span className='font-[poppins] text-xs underline hover:underline-offset-4'>Menu</span>
+        <div id='bars__menu' onClick={ onPick } className='mx-6 my-9 sm:hidden cursor-pointer' >   
+            <span id={first.line1} className='block w-6 h-[5px] m-1 bg-black  rounded' ></span>
+            <span id={first.line2} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded' ></span>
+            <span id={first.line3} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
+
         </div>
 
     </>

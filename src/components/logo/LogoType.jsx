@@ -10,7 +10,7 @@ export const LogoType = (Props) => {
   return (
     <>
         <div className='flex items-center cursor-pointer'>
-          <img src={logo} alt="Logo-Unanleon" className='w-20 h-24 pt-2 sm:m-4 sm:w-32 sm:h-36'/>
+          <img src={logo} alt="Logo-Unanleon" className=' mt-3 md:h-32 h-24 inline'/>
           <p className='font-roboto pl-2 bg-clip-text py-2 '>
             <span className=' text-lg sm:text-3xl font-[700]' style={{ "color": color[0] }}>UNAN </span> <span className='text-lg sm:text-3xl font-[700] ' style={{ "color": color[2] }}> - </span>
             <span className=' text-lg sm:text-3xl font-[700]' style={{ "color": color[1] }}>LEON </span> <span className='text-xl sm:text-4xl font-[800]' style={{ "color": color[2] }}> | </span>

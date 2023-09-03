@@ -1,22 +1,24 @@
 import { LogoType } from '../logo/LogoType'
 import { BurgerMenu } from './BurgerMenu'
 import { ItemsNav } from './ItemsNav'
+import { Nav1 } from './Nav1'
 
 export const Header = () => {
 
   return (
     <>
-      <div className=" bg-primary-color cursor-default">
-        <p className="text-white pl-16 sm:pl-24 pt-1 pb-1  font-poppins text-[10px] sm:text-[15px]">Universidad Autónoma de Nicaragua </p>
-      </div>
-      <header className='flex place-content-between'>
+      <Nav1 />
+      <nav className='bg-white sm:flex flex-col md:flex-row items-center justify-between'>
+        <div className='flex justify-between'>
 
-        <LogoType type={ true }/>
+          <LogoType type={ true }/>
+
+          <BurgerMenu /> 
+        </div>
 
         <ItemsNav />
-
-        <BurgerMenu /> 
-      </header>
+    </nav>
     </>
   )
 }
+

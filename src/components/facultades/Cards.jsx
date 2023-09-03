@@ -5,12 +5,10 @@ import info from "./datos"
 export const Cards = () => {
   return (
         <>
-            <div className=" px-16  sm:py-14 pt-11 pb-9 sm:text-4xl text-3xl font-extrabold font-poppins text-[#2E2D29CC] cursor-default">
+            <div className=" sm:px-16 px-7 sm:py-14 py-11 sm:text-4xl text-3xl font-extrabold font-poppins text-[#2E2D29CC] cursor-default">
                 <p>Facultades</p>
             </div>
-            
-            <div className=" flex items-start justify-start  flex-wrap gap-8 mx-16 mb-11">
-
+            <div className=" flex items-start sm:justify-center flex-wrap sm:gap-18 gap-10 mb-16 mx-7 ">
             {
                 info.map((item, index) => (
                     <Card key={index} title={item.title} description={item.description} image={item.image}  link={ item.link }/>

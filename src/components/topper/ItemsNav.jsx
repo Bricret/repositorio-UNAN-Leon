@@ -1,20 +1,25 @@
+import { Search } from '../hero/Search';
 import items from './navItems';
-
-
 
 
 export const ItemsNav = () => {
   return (
         <>
-            <ul  className="hidden sm:flex sm:w-[438px] sm:mr-4 sm:place-content-around sm:items-center sm:font-[400] sm:text-[#605656]">
-            <li className=''>
+        <div className=' bg-slate-500 text-white sm:text-black sm:bg-white sm:py-0 py-4 sm:pl-0 pl-7 sm:opacity-100 top-[-400px]'>
+            <ul className='sm:flex sm:items-center z-[-1] sm:z-auto sm:static font-roboto'>
                 {
                     items.map((value, index) => (
-                    <a href={ value.link } key={ index } className={ value.Style }> { value.title } </a>
+                        <li className={ value.StyleLi } key={ index }>
+                            <a href={ value.link }  className={ value.StyleA }> { value.title } </a>
+                        </li>
                     ))
                 }
-            </li>
-        </ul>
+            <span className='px-8 font-poppins cursor-default'>Buscador</span>
+            </ul>
+            <div className='sm:hidden sm:py-0 py-4 text-black'>
+                <Search />
+            </div>
+        </div>
         </>
     )
 }

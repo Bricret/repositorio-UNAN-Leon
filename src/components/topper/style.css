@@ -1,9 +1,9 @@
 #bars__menu {
-    transition: all 600ms;
+    transition: all 500ms;
 }
 
 #bars__menu span {
-    transition: all 400ms;
+    transition: all 500ms;
     transform-origin: 0px 100%;
 }
 
