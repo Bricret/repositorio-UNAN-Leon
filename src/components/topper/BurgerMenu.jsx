@@ -1,6 +1,6 @@
 import './style.css'
-import { useSelect } from '../../hooks/useSelect'
-
+import { ItemsNav } from './ItemsNav'
+import { useState } from 'react';
 
 export const BurgerMenu = () => {
     
@@ -16,18 +16,26 @@ export const BurgerMenu = () => {
         line3: 'activeline3__bars-menu',
      };
 
-     const { onPick, first } = useSelect(true,originalID, newID);
+     const [select, setSelect] = useState( false );
+     const [first, setFirst] = useState( originalID );
+ 
+ 
+     const onPick = () => {
+         select ? setFirst(originalID) : setFirst(newID);
+         setSelect(!select);
+     };
+ 
 
   return (
     <>
         
-        <div id='bars__menu' onClick={ onPick } className='mx-6 my-9 sm:hidden cursor-pointer' >   
+        <div id='bars__menu' onClick={ onPick } className='mx-6 my-9 sm:hidden cursor-pointer'>   
             <span id={first.line1} className='block w-6 h-[5px] m-1 bg-black  rounded' ></span>
             <span id={first.line2} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded' ></span>
             <span id={first.line3} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
-
         </div>
 
+        <ItemsNav sec={ select }/>
     </>
   )
 }
