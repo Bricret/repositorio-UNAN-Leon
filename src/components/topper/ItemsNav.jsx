@@ -1,12 +1,17 @@
 import { Search } from '../hero/Search';
 import items from './navItems';
+import './style.css'
+import PropTypes from 'prop-types';
 
+export const ItemsNav = (props) => {
 
-export const ItemsNav = () => {
+    const { sec } = props;
+    console.log(sec);
+
   return (
         <>
-        <div className=' bg-slate-500 text-white sm:text-black sm:bg-white sm:py-0 py-4 sm:pl-0 pl-7 sm:opacity-100 top-[-400px]'>
-            <ul className='sm:flex sm:items-center z-[-1] sm:z-auto sm:static font-roboto'>
+        <div className={sec ? "showMenuNav" : "hideMenuNav"}>
+            <ul className='w-[70%] sm:w-full h-screen sm:h-20 bg-black sm:bg-white opacity-100 sm:flex sm:items-center z-[-1] sm:z-auto sm:static font-roboto'>
                 {
                     items.map((value, index) => (
                         <li className={ value.StyleLi } key={ index }>
@@ -14,12 +19,17 @@ export const ItemsNav = () => {
                         </li>
                     ))
                 }
-            <span className='sm:hidden px-8 font-poppins cursor-default'>Buscador</span>
+                <hr className=' w-[95%] bg-[#3f3f3f] opacity-40 sm:hidden'/>
+                <div className='sm:py-0 py-4 text-black sm:hidden'>
+                    <span className='px-8 font-poppins cursor-default text-white opacity-70'>Buscador</span>
+                    <Search />
+                </div>
             </ul>
-            <div className='sm:hidden sm:py-0 py-4 text-black'>
-                <Search />
-            </div>
         </div>
         </>
     )
+}
+
+ItemsNav.propTypes = {
+    sec : PropTypes.any,
 }
