@@ -15,7 +15,7 @@ export const Card = (props) => {
                         <p className="mb-3 font-normal text-gray-700 py-2">{ description }</p>
                     </span>
                 </div>
-                <a className="inline-flex items-center px-3 py-2 text-sm mb-3 mx-3 w-24 font-medium text-center text-white bg-secondary-color rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300" href={ link }>
+                <a className="inline-flex items-center px-2  py-2 text-sm mb-3 mx-3 w-24 font-medium text-center text-white bg-secondary-color rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300" href={ link }>
                 ver mas
                 <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
