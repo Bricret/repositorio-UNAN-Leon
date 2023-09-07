@@ -1,3 +1,4 @@
+
 import { Search } from '../hero/Search';
 import items from './navItems';
 import './style.css'
@@ -27,6 +28,8 @@ export const ItemsNav = (props) => {
 
             </ul>
         </div>
+
+
         </>
     )
 }

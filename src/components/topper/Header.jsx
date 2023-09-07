@@ -14,8 +14,6 @@ export const Header = () => {
 
           <BurgerMenu /> 
         </div>
-
-
     </nav>
     </>
   )

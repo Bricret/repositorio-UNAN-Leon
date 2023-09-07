@@ -10,8 +10,8 @@ export const Cards = () => {
             </div>
             <div className=" flex items-start sm:justify-center flex-wrap sm:gap-18 gap-10 mb-16 mx-7 ">
             {
-                info.map((item, index) => (
-                    <Card key={index} title={item.title} description={item.description} image={item.image}  link={ item.link }/>
+                info.map(( { title, description, image, link } , index ) => (
+                    <Card key={ index } title={ title } description={ description } image={ image }  link={  link }/>
                 ))
             }
 
