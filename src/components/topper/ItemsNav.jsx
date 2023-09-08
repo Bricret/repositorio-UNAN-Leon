@@ -1,8 +1,8 @@
-
 import { Search } from '../hero/Search';
 import items from './navItems';
 import './style.css'
 import PropTypes from 'prop-types';
+
 
 export const ItemsNav = (props) => {
 
