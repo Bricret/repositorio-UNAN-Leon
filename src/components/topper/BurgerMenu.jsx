@@ -1,5 +1,4 @@
-import './style.css'
-import { ItemsNav } from './ItemsNav'
+import './style.css';   
 import { useState } from 'react';
 
 export const BurgerMenu = () => {
@@ -34,8 +33,6 @@ export const BurgerMenu = () => {
             <span id={first.line2} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded' ></span>
             <span id={first.line3} className='block w-6 h-[5px] m-1 bg-black mt-1 rounded ' ></span>
         </div>
-
-        <ItemsNav sec={ select }/>
     </>
   )
 }
