@@ -1,7 +1,7 @@
-const lookA = 'px-2 sm:text-lg text-sm sm:opacity-40 hover:text-third-color sm:hover:text-[#000000] sm:hover:opacity-70';
-const lookLi = 'mx-6 sm:my-4 my-3 py-1 sm:my-0 hover:bg-[#272727] duration-500 sm:hover:bg-[#C0C0C0] rounded-lg';
+const lookA = 'px-2 md:text-lg text-sm md:opacity-40 md:hover:text-[#000000] md:hover:opacity-70';
+const lookLi = 'mx-6 md:my-4 my-6 py-1 md:my-0 duration-500 hover:bg-[#C0C0C0] rounded-lg md:flex md:items-center';
 
-const items = [
+export const items = [
     {
         title: 'Menu Principal',
         link: '#',
@@ -20,10 +20,17 @@ const items = [
         StyleA: lookA,
         StyleLi: lookLi,    
     },
-    
 
-]
+];
 
-export default items;
+export const originalID = {
+    line1: 'line1__bars-menu',
+    line2: 'line2__bars-menu',
+    line3: 'line3__bars-menu',
+ };
 
-//w-[100%] 
+export const newID = {
+    line1: 'activeline1__bars-menu',
+    line2: 'activeline2__bars-menu',
+    line3: 'activeline3__bars-menu',
+}; 

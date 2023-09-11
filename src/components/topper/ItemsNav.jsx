@@ -1,22 +1,19 @@
-// import { Search } from '../hero/Search';
-import { BurgerMenu } from './BurgerMenu';
-import items from './navItems';
-// import './style.css'
+import { items } from './navItems';
+import { Search } from '../hero/Search';
 import PropTypes from 'prop-types';
 
 
-export const ItemsNav = () => {
+export const ItemsNav = (props) => {
 
-    // const { sec } = props;
+    const { select } = props;
+    console.log(select);
 
   return (
         <>
-            <BurgerMenu />
-            <ul className=' sm:flex sm:items-center sm:pb-0 py-6 sm:py-0 absolute sm:static sm:bg-white bg-slate-200 sm:z-auto mt-28 mb-6 sm:mb-0 sm:mt-0 left-0 w-full sm:w-auto'>
-                {/* <div className='sm:py-0 py-4 text-black sm:hidden mt-5'>
+            <ul className={ `md:flex md:items-center md:pb-0 py-6 md:py-0  md:static md:bg-white bg-slate-200 text-center md:z-auto md:mb-0 md:mt-0 left-0 w-full md:w-auto transition-all duration-500 ease-in ${select ? 'block' : 'hidden'}` }>
+                <div className='md:hidden'>
                     <Search />
-                </div> */}
-                <span className=' sm:hidden ml-4 cursor-default text-xl font-roboto'>Navegacion</span>
+                </div>
                 {
                     items.map((value, index) => (
                         <li className={ value.StyleLi } key={ index }>
@@ -24,14 +21,11 @@ export const ItemsNav = () => {
                         </li>
                     ))
                 }
-                <div className='sm:hidden'>
-                    {/* <Search /> */}
-                </div>
             </ul>
         </>
     )
 }
 
 ItemsNav.propTypes = {
-    sec : PropTypes.any,
+    select : PropTypes.any,
 }
