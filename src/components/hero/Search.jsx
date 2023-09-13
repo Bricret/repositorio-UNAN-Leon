@@ -1,6 +1,5 @@
 import { AiOutlineSearch } from "react-icons/ai";
 
-
 export const Search = () => {
   return (
     <>

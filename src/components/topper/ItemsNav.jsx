@@ -3,10 +3,7 @@ import { Search } from '../hero/Search';
 import PropTypes from 'prop-types';
 
 
-export const ItemsNav = (props) => {
-
-    const { select } = props;
-    console.log(select);
+export const ItemsNav = ({ select }) => {
 
   return (
         <>
@@ -15,9 +12,9 @@ export const ItemsNav = (props) => {
                     <Search />
                 </div>
                 {
-                    items.map((value, index) => (
-                        <li className={ value.StyleLi } key={ index }>
-                            <a href={ value.link }  className={ value.StyleA }> { value.title } </a>
+                    items.map(({ StyleLi, StyleA, link, title }, index) => (
+                        <li className={ StyleLi } key={ index }>
+                            <a href={ link }  className={ StyleA }> { title } </a>
                         </li>
                     ))
                 }

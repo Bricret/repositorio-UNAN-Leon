@@ -1,8 +1,7 @@
 import PropTypes from 'prop-types';
 
-export const Card = (props) => {
+export const Card = ({ image, description, title, link }) => {
 
-    const { image, description, title, link } = props;
 
   return (
         <>
