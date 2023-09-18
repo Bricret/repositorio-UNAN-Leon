@@ -1,5 +1,5 @@
 import { LogoType } from '../logo/LogoType'
-import { ItemsFooter } from './ItemsFooter'
+import { Footer1 } from './Footer1'
 
 export const Footer = () => {
   return (
@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className='py-3 md:px-10 px-7'>
             <LogoType type={ false }/>
             </div>
-            <ItemsFooter />
+            <Footer1 />
         </div>
 
     </>
